@@ -35,7 +35,7 @@ class OpencvLite < Formula
 
   uses_from_macos "zlib"
 
-  fails_with gcc: "5" # ffmpeg is compiled with GCC
+  fails_with gcc: "5"
 
   resource "contrib" do
     url "https://github.com/opencv/opencv_contrib/archive/4.5.5.tar.gz"
@@ -95,7 +95,6 @@ class OpencvLite < Formula
       args << "-DOPENEXR_ILMIMF_LIBRARY=#{Formula["openexr"].opt_lib}/libIlmImf.so"
       args << "-DOPENEXR_ILMTHREAD_LIBRARY=#{Formula["openexr"].opt_lib}/libIlmThread.so"
       args << "-DPNG_LIBRARY=#{Formula["libpng"].opt_lib}/libpng.so"
-      args << "-DPROTOBUF_LIBRARY=#{Formula["protobuf"].opt_lib}/libprotobuf.so"
       args << "-DTIFF_LIBRARY=#{Formula["libtiff"].opt_lib}/libtiff.so"
       args << "-DWITH_V4L=OFF"
       args << "-DZLIB_LIBRARY=#{Formula["zlib"].opt_lib}/libz.so"
