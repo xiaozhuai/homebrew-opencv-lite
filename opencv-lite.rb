@@ -27,7 +27,6 @@ class OpencvLite < Formula
   depends_on "jpeg"
   depends_on "libpng"
   depends_on "libtiff"
-  depends_on "numpy"
   depends_on "openblas"
   depends_on "openexr"
   depends_on "tbb"
