@@ -108,14 +108,14 @@ class OpencvLite < Formula
       system "cmake", "..", *args
       inreplace "modules/core/version_string.inc", Superenv.shims_path, ""
 
-      system "make", "-j8"
+      system "make"
       system "make", "install"
 
       system "make", "clean"
       system "cmake", "..", "-DBUILD_SHARED_LIBS=OFF", *args
       inreplace "modules/core/version_string.inc", Superenv.shims_path, ""
 
-      system "make", "-j8"
+      system "make"
       lib.install Dir["lib/*.a"]
       lib.install Dir["3rdparty/**/*.a"]
     end
