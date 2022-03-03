@@ -1,4 +1,4 @@
-class Opencv < Formula
+class OpencvLite < Formula
   desc "Open source computer vision library"
   homepage "https://opencv.org/"
   url "https://github.com/opencv/opencv/archive/4.5.5.tar.gz"
